@@ -111,4 +111,23 @@
     - 클러스터 환경에서 컨테이너는 어느 서버에 생성될지 알 수 없고 다른 서버로 이동할 수 있다. 
     - 이에 컨테이너와 통신하고자 컨테이너가 생성 및 중지될 때 컨테이너의 Ip와 Port 번호를 업데이트 해준다.
     - Key-Value 스토리지에 정보를 저장할 수 있고, 내부 DNS 서버를 이용
+
+## Docker 본격적으로 알아보자!
+### Docker 구조
+##### Client - Server 구조
+     Client에서 'docker run'을 입력하면, Host의 Docker Daemon에서 해당 명령어를 처리하며 그 결과를 Client 화면에 보여준다.
+
+![image](https://github.com/YesYoungJean/Docker_Study/assets/107979338/32b672b4-4aa4-48eb-8cd4-ccbe5c8662c8)
+
+
+### Docker 기본 명령어
+#### 1) run: 컨테이너 실행
+![image](https://github.com/YesYoungJean/Docker_Study/assets/107979338/0d5e0e12-f64a-4ac3-b15e-975552cf108c)
+
+##### ex) MySQL(MariaDB) 실행
+![image](https://github.com/YesYoungJean/Docker_Study/assets/107979338/d729ba7f-14e0-4e6d-8ced-e552fbe1b7bc)
+
+#### cf) exec 명령어란?
+    exec 명령어는 run 명령어와 달리 '실행중인 도커 컨테이너'에 접속할 때 사용하며, 컨테이너 안에 ssh 서버을 설치하지 않고 exec 명령어로 접속한다.
     
+
